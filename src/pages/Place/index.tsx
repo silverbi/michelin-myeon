@@ -1,4 +1,4 @@
-import MapView from "@/components/features";
+import MapView from "@/components/features/place/MapView";
 
 export const Place = () => {
   return <MapView />;
