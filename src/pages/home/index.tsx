@@ -1,3 +1,4 @@
+import { IMAGES } from "@/common/images";
 import { redirect } from "react-router-dom";
 
 export const Home = () => {
@@ -10,7 +11,7 @@ export const Home = () => {
       <div className="hero min-h-[calc(100vh-72px)] bg-base-200">
         <div className="hero-content flex-col lg:flex-row">
           <img
-            src={`${import.meta.env.VITE_S3_URI}/images/naengmyeon-1.jpg`}
+            src={IMAGES.NAENGMYEON}
             className="max-w-sm rounded-lg shadow-2xl mr-8"
             alt="평양냉면"
           />
