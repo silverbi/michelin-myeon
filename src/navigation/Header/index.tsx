@@ -4,7 +4,9 @@ export const Header = () => {
   return (
     <div className="navbar bg-base-100">
       <div className="flex-1">
-        <a className="btn btn-ghost text-xl">미슐랭면</a>
+        <a href="/" className="btn btn-ghost text-xl">
+          미슐랭면
+        </a>
       </div>
 
       <div className="flex-none gap-2">

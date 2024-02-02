@@ -1,9 +1,11 @@
 import { IMAGES } from "@/common/images";
-import { redirect } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 export const Home = () => {
-  const handleOnClickStart = () => {
-    redirect("/place");
+  const navigate = useNavigate();
+
+  const handleGoToPlace = () => {
+    navigate("/place");
   };
 
   return (
@@ -27,7 +29,7 @@ export const Home = () => {
               <br />
               미슐랭면을 통해 <b>나만의 평양냉면 맛집</b>을 찾아 보세요!
             </p>
-            <button onClick={handleOnClickStart} className="btn btn-primary">
+            <button onClick={handleGoToPlace} className="btn btn-primary">
               평양냉면 찾아보기
             </button>
           </div>
