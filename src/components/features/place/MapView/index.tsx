@@ -8,7 +8,10 @@ export const MapView = () => {
 
   return (
     <>
-      <div id="map" className="w-[calc(100vw)] h-[calc(100vh-72px)]" />
+      <div
+        id="map"
+        className="w-[calc(100vw)] h-[calc(100vh-72px)] min-h-[calc(100vh-72px)]"
+      />
     </>
   );
 };
