@@ -10,9 +10,9 @@ export const MapView = () => {
 
   const mapOptions = {
     scaleControl: true,
-    mapDataControl: true,
+    mapDataControl: false,
     mapTypeControl: false,
-    zoomControl: true,
+    zoomControl: false,
   };
 
   useLayoutEffect(() => {
@@ -32,12 +32,7 @@ export const MapView = () => {
     });
   }, []);
 
-  return (
-    <div
-      ref={mapElement}
-      className="w-[calc(100vw)] h-[calc(100vh-72px)] min-h-[calc(100vh-72px)]"
-    />
-  );
+  return <div ref={mapElement} className="w-[calc(100vw)] h-full min-h-full" />;
 };
 
 export default MapView;

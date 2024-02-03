@@ -4,7 +4,10 @@ import { IMAGES } from "@/common/images";
 export const CustomMarker = () => {
   return (
     <div className="w-auto h-10 relative">
-      <button className="bg-[#734b46] p-1.5 rounded-full flex flex-row justify-center items-center">
+      <label
+        htmlFor="my-drawer"
+        className="drawer-button bg-[#734b46] p-1.5 rounded-full flex flex-row justify-center items-center cursor-pointer"
+      >
         <img
           src={IMAGES.NAENGMYEON}
           alt="냉면 마커 이미지"
@@ -19,7 +22,7 @@ export const CustomMarker = () => {
           width={18}
           height={18}
         />
-      </button>
+      </label>
     </div>
   );
 };

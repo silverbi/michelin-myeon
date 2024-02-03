@@ -2,7 +2,7 @@ import ThemeController from "@/components/elements/ThemeController";
 
 export const Header = () => {
   return (
-    <div className="navbar bg-base-100">
+    <div className="navbar bg-base-100 border-b border-base-200">
       <div className="flex-1">
         <a href="/" className="btn btn-ghost text-xl">
           미슐랭면
